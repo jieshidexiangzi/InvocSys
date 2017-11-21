@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zbit.mapper.SaleMapper">
+	<select id="getSaleList" resultType="Sale">
+		SELECT s.*,p.productName,u.realName FROM sale s JOIN product p ON s.productId = p.id
+			JOIN users u ON s.userId = u.id
+		ORDER BY ${orderName} DESC LIMIT #{offset},#{pageSize}
+	</select>
+	
+	<select id="count" resultType="int">
+		SELECT count(0) FROM sale
+	</select>
+	
+	<insert id="add" parameterType="Sale">
+		INSERT INTO sale(price,quantity,totalPrice,saleDate,userId,productId)
+		VALUES(#{price},#{quantity},#{totalPrice},#{saleDate},#{userId},#{productId})
+	</insert>
+	
+</mapper>

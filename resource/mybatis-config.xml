@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 设置全局参数，能够影响整个mybatis的运行 -->
+	<settings>
+		<!-- 配置mybatis的log实现为LOG4J -->
+		<setting name="logImpl" value="LOG4J"/>
+		<setting name="lazyLoadingEnabled" value="false"/>
+	</settings>
+	<typeAliases>
+		 <package name="cn.zbit.entity"/>
+	</typeAliases>
+</configuration>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zbit.mapper.ProductMapper">
+	<select id="getProductList" resultType="Product">
+		SELECT * FROM product
+	</select>
+	
+	<select id="queryProductByid" resultType="Product">
+		SELECT * FROM product where id=#{pid}
+	</select>
+	
+	<update id="updateQuantity">
+		update product set quantity = #{quantity} where id = #{pid}
+	</update>
+	
+</mapper>
