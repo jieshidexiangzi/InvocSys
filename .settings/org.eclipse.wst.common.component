@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="InvcoSys">
-        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="InvocSys">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/resource"/>
-        <property name="context-root" value="InvcoSys"/>
-        <property name="java-output-path" value="/InvcoSys/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/InvocSys"/>
+        <property name="java-output-path" value="/InvocSys/WebRoot/WEB-INF/classes"/>
     </wb-module>
 </project-modules>

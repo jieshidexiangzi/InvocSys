@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="InvocSys"
+  id="myeclipse.1511256568759"
+  context-root="/InvocSys"
+  j2ee-spec="6.0"
+  archive="InvocSys.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
